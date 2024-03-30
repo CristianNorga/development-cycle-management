@@ -1,30 +1,16 @@
-import Content from './Content.model';
-import Status  from './Status.model';
 
-class Task {
+export default class Task {
 	Id: number;
 	Name: string;
-	Content: Content;
-	Area: string;
-	Status: Status;
-	Dependencies: string[];
-	Service: string;
+	Area: string[];
 
 	constructor(
 		id: number,
-		title: string,
+		area: string[],
 		name: string,
-		content: Content,
-		status: Status,
-		dependencies: string[],
-		service: string
 	) {
 		this.Id = id;
-		this.Area = title;
+		this.Area = area;
 		this.Name = name;
-		this.Content = content;
-		this.Status = status;
-		this.Dependencies = dependencies;
-		this.Service = service;
 	}
 }

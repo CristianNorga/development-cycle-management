@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "development-cycle-management",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,9 +13,11 @@
     "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
+    "vue-draggable-plus": "^0.4.0",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
     "usebootstrap": "^3.5.5"
   }
 }

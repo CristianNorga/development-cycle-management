@@ -2,9 +2,9 @@ import {Status as StatusEnum} from '../enums/Status.enum'
 
 export default class Status {
 	Current: StatusEnum;
-	Trace: string;
+	Trace: StatusEnum[];
 
-	constructor(current: StatusEnum, trace: string) {
+	constructor(current: StatusEnum, trace: StatusEnum[]) {
 		this.Current = current;
 		this.Trace = trace;
 	}
