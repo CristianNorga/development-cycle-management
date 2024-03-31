@@ -1,9 +1,7 @@
 <script setup lang="ts">
 const router = useRouter();
 
-const navigateToRoteiro = () => {
-  router.push('/roteiro');
-};
+
 </script>
 
 <template>  
@@ -11,7 +9,8 @@ const navigateToRoteiro = () => {
     <h1>
       Home
     </h1>
-    <button @click="navigateToRoteiro">Roteiro</button>
+    <button @click="router.push('/roteiro')">Roteiro</button>
+    <button @click="router.push('/service')">Servicios</button>
   </div>
 </template>
 
